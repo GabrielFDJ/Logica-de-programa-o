@@ -8,8 +8,7 @@ int main()
     scanf("%d",&n);
     
     d = n + 2;
-    
-    r = d % 2; 
+    r = d % 2;
     
     if (r == 0) 
     {

@@ -2,14 +2,14 @@
 Questões de logica
 int main()
 {
-    int a,b,x,r;
-    scanf("%d",&a);
-    scanf("%d",&b);
+    float a,b,x,r;
+    scanf("%f",&a);
+    scanf("%f",&b);
     
     x = -b / a;
-    r = sqrt (x);
+    r = x;
     
-    printf("Raiz quadrada %d", r);
+    printf("Raiz da função: %f", x);
     
     return 0;
 }

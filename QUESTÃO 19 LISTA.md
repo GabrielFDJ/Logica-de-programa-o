@@ -2,12 +2,12 @@
 Questões de logica
 int main()
 {
-    float a,b,x,r;
+    float a,b,x;
     scanf("%f",&a);
     scanf("%f",&b);
     
     x = -b / a;
-    r = x;
+    
     
     printf("Raiz da função: %f", x);
     

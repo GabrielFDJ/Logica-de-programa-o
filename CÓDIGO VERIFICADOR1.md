@@ -8,7 +8,7 @@ int main()
     
     ldl = ct - hdlt - (tgd * 0.2);
     
-    if(ldl<0)
+    if(ldl<100)
     printf("Otimo");
     else if(ldl>99 && ldl<130)
     printf("Sub-otimo");

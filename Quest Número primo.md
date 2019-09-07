@@ -3,22 +3,41 @@ Questões de logica
 
 int main()
 {
-    int n,r,d;
-
-scanf("%d",&n);
-
-d = n + 2;
-r = d % 2;
-
-if (r == 0) 
-{
-printf("Subprimo de Chen");
-}
-else if (r > 0){
-printf("Primo de Chen");
-}
-
-
+    int numero;
+    int itermo;
+    int resultado;
+    int divisores=0;
+    int produto;
+    int icont=0;
+    
+    printf("Digite um numero : ");
+    scanf("%d",&numero);
+    
+    resultado = numero + 2;
+    
+    for(itermo=1;itermo<=resultado;itermo++){
+    if(resultado % itermo == 0)
+    divisores++;}
+    
+    if(divisores != 2)
+    produto = resultado / 2;
+    
+    for(itermo=1;itermo<=produto;itermo++){
+    if(produto % itermo == 0)
+    icont++;}
+    
+    if(divisores == 2 || icont == 2 && produto * produto == resultado)
+    printf("EH numero primo de Chen");
+    
+    else 
+    printf("N EH numero primo de Chen");
 return 0;
     
 }
+
+
+
+
+
+
+
